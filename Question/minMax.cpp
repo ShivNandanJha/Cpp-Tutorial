@@ -7,35 +7,53 @@ using namespace std;
 int getMax(int num[], int n)
 {
     // Initialize the maximum value to the smallest possible value using INT16_MIN constant from <limits.h> library
-    int max = INT16_MIN;
+    int maxi = INT16_MIN;
     // Loop through the array and compare each element with the current maximum value
     for (int i = 0; i < n; i++)
     {
         // If the current element is greater than the current maximum value, update the maximum value
-        if (num[i] > max)
+        if (num[i] > maxi)
         {
-            max = num[i];
+            maxi = num[i];
         }
     }
+
+
+    //* Another Method----------------------------------------------
+    /*
+     * maxi = max(maxi,num[i]);
+     max is predefined function which gives the maximum value from given arguments.
+    */
+
+
     // Return the maximum value
-    return max;
+    return maxi;
 }
 
 int getMin(int num[], int n)
 {
     // Initialize the minimum value to the largest possible value using INT16_MAX constant from <limits.h> library
-    int min = INT16_MAX;
+    int mini = INT16_MAX;
     // Loop through the array and compare each element with the current minimum value
     for (int i = 0; i < n; i++)
     {
         // If the current element is smaller than the current minimum value, update the minimum value
-        if (num[i] < min)
+        if (num[i] < mini)
         {
-            min = num[i];
+            mini = num[i];
         }
     }
+
+
+    //* Another Method----------------------------------------------
+    /*
+     * mini = min(mini,num[i]);
+     min is predefined function which gives the maximum value from given arguments.
+    */
+
+
     // Return the minimum value
-    return min;
+    return mini;
 }
 
 int main()
