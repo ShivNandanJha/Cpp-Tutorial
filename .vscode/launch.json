@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/HP/Cpp Tutorial/Question",
-      "program": "c:/Users/HP/Cpp Tutorial/Question/build/Debug/outDebug",
+      "cwd": "c:/Users/HP/Cpp Tutorial",
+      "program": "c:/Users/HP/Cpp Tutorial/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
