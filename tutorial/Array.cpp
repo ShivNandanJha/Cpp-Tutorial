@@ -17,5 +17,6 @@ count++;  //if so, increment the count variable
 }
 }
 }
+
 cout << count << endl;  //display the count of pairs whose sum equals x
      }  //end of the main function
