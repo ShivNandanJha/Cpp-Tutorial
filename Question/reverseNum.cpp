@@ -21,3 +21,4 @@ int main(){
     }
     cout << "Reversed number is: " << ans << endl;  // Print the reversed number
 }
+zzzz
