@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// todo: convert binary number into decimal number
 int main()
 {
     int binaryNum, decimalNum = 0, base = 1;
