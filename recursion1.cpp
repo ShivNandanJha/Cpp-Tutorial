@@ -2,8 +2,9 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-// ! Recursion
-//? Given an integer , find the sum of its digits using the recursion;
+  // ! Recursion
+
+//todo:Given an integer , find the sum of its digits using the recursion;
 int findSum(int n)
 {
     if (n >= 0 && n <= 9)
@@ -14,7 +15,7 @@ int findSum(int n)
     return sum;
 }
 
-  //? Given two numbers p & q,find the value of p^q usinf a recursive function;
+  //todo: Given two numbers p & q,find the value of p^q usinf a recursive function;
  int findPower(int p,int q){
 if (q==1){
         return p;
