@@ -38,4 +38,3 @@ int main() // define the main function
 
     return 0; // return 0 to indicate successful execution of the program
 }
-```
