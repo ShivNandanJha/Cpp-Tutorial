@@ -34,14 +34,14 @@ void sortZeroesandOnes(vector<int> &v)
 
 void sort_zero_and_one(vector<int> &v)
 {
-    int left_ptr = 0;
+    int left_ptr  = 0;
     int right_ptr = v.size() - 1;
 
     while (left_ptr < right_ptr)
     {
         if (v[left_ptr] == 1 && v[right_ptr] == 0)
         {
-            v[left_ptr++] = 0;
+            v[left_ptr++]  = 0;
             v[right_ptr--] = 1;
         }
         if (v[left_ptr] == 0)
@@ -56,30 +56,30 @@ void sort_zero_and_one(vector<int> &v)
     return;
 }
 
-// main function that takes input of elements in array of 0s and 1s and calls the function to sort them
+    // main function that takes input of elements in array of 0s and 1s and calls the function to sort them
 int main()
 {
-    int n; // declare variable n for number of elements of array
+    int n;  // declare variable n for number of elements of array
     cout << "enter number of element" << endl;
-    cin >> n;      // take input of n from user
-    vector<int> v; // declare a vector to store elements in
+    cin         >> n;  // take input of n from user
+    vector<int> v;     // declare a vector to store elements in
     for (int i = 0; i < n; i++)
     {                // iterate through the array up to n times
-        int element; // declare variable to store input element
+        int element;  // declare variable to store input element
         cout << "Enter element" << i << ":" << endl;
-        cin >> element;       // take input of element from user
-        v.push_back(element); // push the element to the back of the vector
+        cin         >> element;  // take input of element from user
+        v.push_back(element);    // push the element to the back of the vector
     }
 
-    sortZeroesandOnes(v); // sort the elements in the array using the function sortZeroesandOnes
+    sortZeroesandOnes(v);  // sort the elements in the array using the function sortZeroesandOnes
 
-    sort_zero_and_one(v); // sort the elements in the array using the function sort_zero_and_one
+    sort_zero_and_one(v);  // sort the elements in the array using the function sort_zero_and_one
 
-    // print the sorted array to the console
+        // print the sorted array to the console
     for (int i = 0; i < n; i++)
     {
         cout << v[i] << " ";
     }
-    cout << endl; // move to the next line after printing the sorted array
-    return 0;     // exit the main function
+    cout   << endl;  // move to the next line after printing the sorted array
+    return 0;        // exit the main function
 }
