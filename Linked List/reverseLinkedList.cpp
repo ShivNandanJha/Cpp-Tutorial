@@ -3,7 +3,8 @@
 #include <algorithm>
 using namespace std;
 
-  // todo: Given the head of a sorted linked list, delete all the duplicate node such that each elements appears only once . Return the sorted linked list;
+  // todo: Given the sorted linked list, reverse the list and out the reversed linked list
+
 
 class Node
 {
@@ -14,7 +15,7 @@ public:
     Node(int data)
     {
         value = data;
-        next  = NULL;
+        next = NULL;
     }
 };
 
@@ -54,34 +55,34 @@ public:
         cout << "NULL" << endl;
     }
 };
-void deleteDuplicate(Node *&head)
-{
+
+Node *reverseLL(Node *&head){
+
+
+    Node *prev    = NULL;
     Node *current = head;
-    while (current != NULL)
-    {
-        while (current->value == current->next->value && current->next != NULL)
-        {
-            Node *temp = current->next;
-            current->next = current->next->next;
-            free(temp);
-        }
-        current = current->next;
+    Node *next;
+
+    while(current != NULL){
+        next = current->next;
+        current->next = prev;
+
+        prev = current;
+        current = next;
     }
-    return ;
+    return prev;
 }
 
 int main()
 {
     Linkedlist ll;
     ll.insertAtTail(1);
-    ll.insertAtTail(4);
-    ll.insertAtTail(3);
     ll.insertAtTail(2);
     ll.insertAtTail(3);
+    ll.insertAtTail(4);
     ll.insertAtTail(5);
+    ll.insertAtTail(6);
     ll.display();
-    deleteDuplicate(ll.head);
+   ll.head= reverseLL(ll.head);
     ll.display();
-
-    return 0;
 }

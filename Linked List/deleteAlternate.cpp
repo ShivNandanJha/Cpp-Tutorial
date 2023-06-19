@@ -55,10 +55,11 @@ public:
     }
 };
 
-void deleteAlternate(Node* &head){
+void deleteAlternate(Node *&head)
+{
     Node *current = head;
 
-    while (current!= NULL && current ->next!= NULL)
+    while (current != NULL && current->next != NULL)
     {
         Node *temp = current->next;
         current->next = current->next->next;
@@ -75,9 +76,8 @@ int main()
     ll.insertAtTail(3);
     ll.insertAtTail(4);
     ll.insertAtTail(5);
-     ll.insertAtTail(6);
+    ll.insertAtTail(6);
     ll.display();
     deleteAlternate(ll.head);
     ll.display();
-
 }
